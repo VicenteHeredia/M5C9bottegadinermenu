@@ -104,7 +104,7 @@ function selectMenu(menu) {
             q = prompt(text).toLowerCase();
             let price = (checkElement(q, value));
 
-            if (price >= 0) {
+            if (price > 0) {
                 check += `${key.toLowerCase()} ${q} -${price}€-\n`;
                 total += price;
                 allOk = true;
