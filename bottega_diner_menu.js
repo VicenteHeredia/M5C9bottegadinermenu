@@ -89,7 +89,7 @@ function checkElement(elem, array) {
     return 0;
 }
 
-// Construcción de los condicionales de propuestas y respuestas según la elección del cliente (gestión errores incluido)
+// Función con los condicionales de propuestas y respuestas según la elección del cliente (gestión errores incluido)
 function selectMenu(menu) {
     for (const [key, value] of Object.entries(menu)) {
         let allOk = false;
@@ -117,7 +117,7 @@ function selectMenu(menu) {
     }
 }
 
-// Elaboración del ticket resumen para mostrar al cliente
+// Función para la elaboración del ticket resumen para mostrar al cliente
 function showCheck(check, total) {
     let text = check;
     let totalWithIVA = total * 1.10;
